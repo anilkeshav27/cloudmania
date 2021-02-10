@@ -1,0 +1,11 @@
+{% extends 'container.html'%}
+{%block content%}
+    <div class="container">
+                {% for eachCountry in countries %}
+                    <h1>{{eachCountry.country}}</h1>
+                    <p>{{eachCountry.count}}</p>
+                    <p>{{eachCountry.recovered}}</p>
+                {% endfor %}
+    </div>
+{%endblock%}
+       
